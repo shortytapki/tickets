@@ -58,7 +58,6 @@ const getTimeTemplates = () => {
 const { fromTmpl, backTmpl } = getTimeTemplates();
 
 const renderBackOptions = () => {
-  timeSelect.innerHTML = fromTmpl;
   wayback.style.display = 'block';
   waybackSelect.innerHTML = backTmpl;
   waybackSelect.querySelectorAll('option').forEach((option) => {
@@ -117,7 +116,7 @@ timeSelect.addEventListener('change', () => {
 fromSelect.addEventListener('change', (e) => {
   const routeOption = e.target.value;
   if (routeOption.includes('обратно')) {
-    console.log(routeOption);
+    timeSelect.innerHTML = fromTmpl;
     renderBackOptions();
     return;
   }
