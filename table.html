@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Таблица</title>
+  </head>
+  <style>
+    .container {
+      padding: 4rem 0;
+    }
+    img {
+      max-width: 900px;
+    }
+
+    img:last-child {
+      min-width: 100%;
+    }
+  </style>
+  <body>
+    <div class="container" style="margin: 0 auto">
+      <section>
+        <h2>Другие типы билетов</h2>
+        <p>
+          В первом случае добавим 4 новые колонки в таблицу, а именно: цену и
+          количество групповых билетов в заказе и цену и количество льготных
+          билетов в заказе.
+        </p>
+        <img src="table1.png" alt="" />
+      </section>
+      <section>
+        <h2>Баркоды билетов в заказе</h2>
+        <p>
+          Во втором случае добавим в таблицу колонку, в которой будем хранить
+          баркоды билетов в заказе в формате JSON:
+        </p>
+        <img src="table2.png" alt="" />
+        <p>В конечном виде таблица будет выглядеть так:</p>
+        <img src="table3.png" alt="" />
+      </section>
+    </div>
+  </body>
+</html>
