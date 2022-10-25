@@ -1,0 +1,14 @@
+.container {
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.container label {
+  font-size: 24px;
+}
+
+#wayback {
+  display: none;
+}
